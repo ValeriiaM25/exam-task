@@ -1,0 +1,74 @@
+@mixin content-width {
+    margin: auto;
+    width: 62.2%;
+    max-width: 1100px;
+}
+
+@mixin subtitle-styles {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;  
+    text-transform: capitalize;
+    text-align: center; 
+}
+
+@mixin title-style{
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+@mixin btn-text {
+    color: #fff;
+    font-size: rem(14px);
+    font-family: 'Aleo', serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@mixin background-image-styling {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@mixin btn-styles {
+    @include btn-text;
+
+    width: 45.5%;
+    max-width: 225px;
+    min-width: 150px;;
+    height: 60px;
+    background: linear-gradient(45deg, rgb(73, 107, 254) 35%, rgb(84, 116, 253) 35%);
+    outline: none;
+    border: none;
+    
+    &:hover,
+    &:active {
+        background: lighten($color: rgb(73, 107, 254) , $amount: 10%);
+        cursor: pointer;
+    }
+
+    @media (max-width: 1000px) {
+        margin-bottom: 3em;
+    }
+}
+
+@mixin regular-title {
+    font-size: rem(36px);
+    font-family: "Aleo";
+    font-weight: normal;
+    color: rgb(232, 232, 232);
+    text-align: center;
+    z-index: 0;
+
+    @media (min-width: 280px) and (max-width: 1100px) {
+        font-size: rem(24px);
+    }
+}
+
