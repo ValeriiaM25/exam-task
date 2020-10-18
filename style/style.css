@@ -81,6 +81,7 @@
 }
 .header__content .header__search-btn .header__btn {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 20%;
@@ -155,10 +156,11 @@
   }
 }
 .header .header__content_bgc .header__navigation-menu {
-  margin: auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: auto;
   width: 62.2%;
   max-width: 1100px;
 }
@@ -228,7 +230,7 @@
   content: "";
   position: absolute;
   display: block;
-  bottom: 15px;
+  bottom: -2px;
   left: 0;
   height: 1px;
   width: 0;
@@ -422,6 +424,7 @@
 .icon-group__content .circle {
   position: absolute;
   left: 12%;
+  top: 10%;
   width: 36%;
   height: 70%;
   border-top: 1px dotted #fff;
@@ -435,6 +438,7 @@
 .icon-group__content .circle-second {
   position: absolute;
   left: 50%;
+  top: 10%;
   width: 37%;
   height: 70%;
   border-top: 1px dotted #fff;
@@ -547,12 +551,12 @@
   width: 62.2%;
   max-width: 1100px;
 }
-@media (min-width: 780px) and (max-width: 1000px) {
+@media (min-width: 600px) and (max-width: 960px) {
   .reviews .reviews__content {
     width: 70%;
   }
 }
-@media (min-width: 280px) and (max-width: 779px) {
+@media (min-width: 280px) and (max-width: 599px) {
   .reviews .reviews__content {
     width: 90%;
   }
@@ -591,14 +595,9 @@
     width: 50%;
   }
 }
-@media (min-width: 520px) and (max-width: 1000px) {
-  .reviews .reviews__content .reviews__container img {
-    width: 60%;
-  }
-}
 @media (min-width: 280px) and (max-width: 1000px) {
   .reviews .reviews__content .reviews__container img {
-    width: 80%;
+    width: 90%;
   }
 }
 .reviews .reviews__content .reviews__container .reviews__text {
@@ -608,7 +607,7 @@
 }
 @media (min-width: 280px) and (max-width: 1000px) {
   .reviews .reviews__content .reviews__container .reviews__text {
-    width: 80%;
+    width: 90%;
   }
 }
 @media (min-width: 280px) and (max-width: 480px) {
