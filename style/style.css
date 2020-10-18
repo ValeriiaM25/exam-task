@@ -536,9 +536,13 @@
   }
 }
 
-.rock {
+.landscapes {
   background-image: url(../img/background-img/rock-img.png);
 }
+.landscapes .apartments__content {
+  margin-left: 50%;
+}
+
 .reviews {
   background-repeat: no-repeat;
   background-size: cover;

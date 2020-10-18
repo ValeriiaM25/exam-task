@@ -299,6 +299,7 @@
             
             .about__btn {
                 @include btn-styles;
+
             }
         }
 
@@ -483,14 +484,11 @@
 
 }
 
-.rock {
+.landscapes {
     background-image: url(../img/background-img/rock-img.png);
 
     .apartments__content {
-
-        .apartments__container {
-
-        }
+        margin-left: 50%;
     }
 }
 
