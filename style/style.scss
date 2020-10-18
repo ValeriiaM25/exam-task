@@ -489,6 +489,10 @@
 
     .apartments__content {
         margin-left: 50%;
+
+        @media (min-width: 280px) and (max-width: 1200px) {
+            margin: auto;
+        }
     }
 }
 

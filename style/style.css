@@ -542,6 +542,11 @@
 .landscapes .apartments__content {
   margin-left: 50%;
 }
+@media (min-width: 280px) and (max-width: 1200px) {
+  .landscapes .apartments__content {
+    margin: auto;
+  }
+}
 
 .reviews {
   background-repeat: no-repeat;
